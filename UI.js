@@ -14,7 +14,7 @@ class UI{
         this.city = document.getElementById('city');
     }
 
-    // Displays info in the UI
+    // Display info in the UI
     paint(weather) {
         this.location.textContent =  weather.name;
         this.desc.textContent =  weather.weather[0].description;
