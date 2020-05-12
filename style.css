@@ -1,0 +1,50 @@
+/* Global */
+:root{
+    --font-size: 4.5vh;
+
+    font-size: var(--font-size);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+html, body{
+    height: 100%;
+    margin: auto;
+}
+
+body{
+    font-family: Menlo, sans-serif;
+    color: #fff;
+    background: #000;
+    display: grid;
+}
+
+p{
+    text-transform: lowercase;
+}
+
+input{
+    background-color: #000;
+    font-family: Menlo, sans-serif;
+    color: #fff;
+    text-transform: lowercase;
+    font-size: 4.5vh;
+    display: inline;
+    width: 50%;
+    
+    border: none;
+    outline: none;
+}
+
+
+/* Classes */
+.container{
+    width: 15rem;
+    margin: auto;
+}
+
+/* IDs */

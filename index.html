@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Info -->
+        <img id="w-icon">
+        <p>> <span id="w-location">Nashville</span></p>
+        <p>> <span id="w-desc">scattered clouds</span></p>
+        <p>> <span id="w-string">62.02 F°</span></p>
+
+        <br>
+
+        <!-- Humidity and Wind -->
+        <p>> <span id="w-humidity">Humidity: 27%</span></p>
+        <p>> <span id="w-wind">Wind: 8.99 MPH</span></p>
+
+        <br>
+
+        <!-- Input -->
+        <p>city > <input id="city" type="text" autocomplete="off" autofocus></p>
+        
+        <script src="storage.js"></script>
+        <script src="weather.js"></script>
+        <script src="ui.js"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
