@@ -22,6 +22,7 @@ class UI{
         this.icon.setAttribute('src', `https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`);
         this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
         this.wind.textContent = `Wind: ${weather.wind.speed} MPH`;
+        this.city.value = '';
     }
 
     // Show alert in UI

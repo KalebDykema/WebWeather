@@ -19,10 +19,35 @@ document.onkeydown = e => {
     focusOnInput(e);
 }
 
+// document.getElementById('w-change-btn').addEventListener('click', e => {
+//     const UIcity = document.getElementById('city');
+//     const city = UIcity.value;
+
+//     // Change location
+//     weather.changeLocation(city);
+    
+//     // Get and display weather
+//     getWeather();
+    
+//     // Set location in storage
+//     setTimeout(() => {
+//         if(cityValid === true) {
+//             console.log(cityValid, 'City is valid');
+//             storage.setLocationData(city);
+//         } else {
+//             UIcity.value = '';
+//         }
+//     }, 200);
+
+//     // Close modal
+//     $('#locModal').modal('hide');
+// });
+
 // Change location on Save Changes
 document.onkeydown = e => {
     if(e.key === 'Enter'){
-        const city = ui.city.value;
+        const UIcity = ui.city;
+        const city = UIcity.value;
 
         // Change location
         weather.changeLocation(city);
