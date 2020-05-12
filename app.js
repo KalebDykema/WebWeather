@@ -16,33 +16,31 @@ document.addEventListener('DOMContentLoaded', getWeather);
 // Keeps the focus on the input text-field
 document.addEventListener('mousedown', focusOnInput);
 document.onkeydown = e => {
-    if(e.key === 'Tab') focusOnInput(e);
+    focusOnInput(e);
 }
 
 // Change location on Save Changes
-// document.getElementById('w-change-btn').addEventListener('click', e => {
-//     const UIcity = document.getElementById('city');
-//     const city = UIcity.value;
+document.onkeydown = e => {
+    if(e.key === 'Enter'){
+        const city = ui.city.value;
 
-//     // Change location
-//     weather.changeLocation(city);
-    
-//     // Get and display weather
-//     getWeather();
-    
-//     // Set location in storage
-//     setTimeout(() => {
-//         if(cityValid === true) {
-//             console.log(cityValid, 'City is valid');
-//             storage.setLocationData(city);
-//         } else {
-//             UIcity.value = '';
-//         }
-//     }, 200);
-
-//     // Close modal
-//     $('#locModal').modal('hide');
-// });
+        // Change location
+        weather.changeLocation(city);
+        
+        // Get and display weather
+        getWeather();
+        
+        // Set location in storage
+        setTimeout(() => {
+            if(cityValid === true) {
+                console.log(cityValid, 'City is valid');
+                storage.setLocationData(city);
+            } else {
+                UIcity.value = '';
+            }
+        }, 200);
+    }
+}
 
 // Gets the weather
 function getWeather() {

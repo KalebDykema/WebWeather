@@ -11,8 +11,9 @@ A JavaScript web app that pulls weather data from the [Open Weather Map API.](ht
 - Make basic design -DONE
 - Write logic -DONE
 - Add use of local storage -DONE
-- Incorporate use of city input
+- Incorporate use of city input -DONE
 - Prevent user from changing focus out of input field -DONE
+- Add code for when city is invalid
 - Refine design
 - Refine operations and functions
 - Make it responsive and work on mobile
