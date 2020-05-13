@@ -1,6 +1,7 @@
 /* Global */
 :root{
     --font-size: 4.5vh;
+    --footer-font-size: 3vh;
     --font-color: #00ff00;
     --alert-color: #e50000;
 
@@ -41,6 +42,10 @@ input{
     outline: none;
 }
 
+footer{
+    font-size: var(--footer-font-size);
+    text-align: center;
+}
 
 /* Classes */
 .container{
