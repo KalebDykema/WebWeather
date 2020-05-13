@@ -46,4 +46,12 @@ input{
     margin: auto;
 }
 
+.alert{
+    color: red!important;
+}
+
+.sleeping-alert{
+    color: #000;
+}
+
 /* IDs */

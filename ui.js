@@ -12,6 +12,9 @@ class UI{
 
         // Input
         this.city = document.getElementById('city');
+
+        // Alert
+        this.alert = document.getElementById('alert');
     }
 
     // Display info in the UI
@@ -26,24 +29,15 @@ class UI{
     }
 
     // Show alert in UI
-    showAlert(msg, classList) {
+    showAlert(msg) {
         // Remove any existing alerts
         this.clearAlert();
 
-        // Create a div
-        const div = document.createElement('div');
         // Add classes
-        div.className = classList;
+        this.alert.classList.add('alert');
         // Add text
-        div.appendChild(document.createTextNode(msg));
+        this.alert.textContent = msg;
 
-        // Get parent
-        const parent = document.querySelector('.col-md-6');
-        // Get col
-        const child = document.getElementById('w-location');
-
-        // Insert alert
-        parent.insertBefore(div, child);
         // Delete after 3 sec
         setTimeout(() => {
             this.clearAlert();
@@ -52,10 +46,9 @@ class UI{
 
     // Clear alert in UI
     clearAlert(){
-        const currentAlert = document.querySelector('.alert');
-
-        if(currentAlert){
-            currentAlert.remove();
+        if(this.alert != '.'){
+            this.alert.classList.remove('alert');
+            this.alert.textContent = '.';
         }
     }
 }
