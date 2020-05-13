@@ -10,7 +10,7 @@ A JavaScript web app that pulls weather data from the [Open Weather Map API.](ht
 
 - Make basic design -DONE
 - Write logic -DONE
-- Add use of local storage -DONE
+- Store last city in local storage -DONE
 - Incorporate use of city input -DONE
 - Prevent user from changing focus out of input field -DONE
 - Add code for when city is invalid -DONE

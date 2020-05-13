@@ -1,6 +1,8 @@
 /* Global */
 :root{
     --font-size: 4.5vh;
+    --font-color: #00ff00;
+    --alert-color: #e50000;
 
     font-size: var(--font-size);
 }
@@ -18,7 +20,7 @@ html, body{
 
 body{
     font-family: Menlo, sans-serif;
-    color: #fff;
+    color: var(--font-color);
     background: #000;
     display: grid;
 }
@@ -30,7 +32,7 @@ p{
 input{
     background-color: #000;
     font-family: Menlo, sans-serif;
-    color: #fff;
+    color: var(--font-color);
     text-transform: lowercase;
     font-size: 4.5vh;
     width: 50%;
@@ -47,7 +49,7 @@ input{
 }
 
 .alert{
-    color: red!important;
+    color: var(--alert-color)!important;
 }
 
 .sleeping-alert{
