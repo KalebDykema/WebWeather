@@ -35,7 +35,7 @@ input{
     font-family: Menlo, sans-serif;
     color: var(--font-color);
     text-transform: lowercase;
-    font-size: 4.5vh;
+    font-size: var(--font-size);
     width: 50%;
     
     border: none;
