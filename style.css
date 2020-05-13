@@ -44,7 +44,7 @@ input{
 
 /* Classes */
 .container{
-    width: 15rem;
+    width: auto;
     margin: auto;
 }
 
@@ -56,4 +56,12 @@ input{
     color: #000;
 }
 
-/* IDs */
+@media(max-width:1024px){
+    :root{
+        --font-size: 3.5vh;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
